@@ -61,7 +61,7 @@ public:
 
   virtual ~Dish() = default;
 
-  void print() const {
+  void print() const noexcept {
     std::cout << "Cooking time: " << cook_time << "\nIngredients: \n";
     for (std::size_t i = 0; i < size; ++i) {
       std::cout << ingredient_names[i] << '\n';
